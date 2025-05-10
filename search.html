@@ -3,27 +3,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Find a Lawyer</title>
+    <title>Find a Lawyer - LegalLinkUS</title>
     <link rel="stylesheet" href="style.css">
+    <script src="lang-toggle.js" defer></script>
 </head>
 <body>
     <header>
         <h1>LegalLinkUS</h1>
         <nav>
-            <a href="index.html">Home</a> |
-            <a href="laws.html">Know Your Laws</a> |
-            <a href="search.html">Find a Lawyer</a> |
+            <a href="index.html" data-en="Home" data-es="Inicio">Home</a> |
+            <a href="laws.html" data-en="Know Your Laws" data-es="Conozca Sus Leyes">Know Your Laws</a> |
+            <a href="search.html" data-en="Find a Lawyer" data-es="Encuentra un Abogado">Find a Lawyer</a> |
             <button onclick="toggleLanguage()">ES/EN</button>
         </nav>
     </header>
     <main>
-        <h2>Find a Lawyer</h2>
-        <p>Search feature coming soon. You'll be able to connect with trusted attorneys in your area!</p>
+        <h2 data-en="Search for the Best Lawyers in Your Area" data-es="Busque los Mejores Abogados en su Área">
+            Search for the Best Lawyers in Your Area
+        </h2>
+        <p data-en="This feature will let users locate trusted legal professionals nearby." 
+           data-es="Esta función permitirá a los usuarios localizar profesionales legales de confianza cerca."></p>
     </main>
-    <script>
-        function toggleLanguage() {
-            alert('Language toggle coming soon!');
-        }
-    </script>
 </body>
 </html>

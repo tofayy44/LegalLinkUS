@@ -3,27 +3,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Know Your Laws</title>
+    <title>Know Your Laws - LegalLinkUS</title>
     <link rel="stylesheet" href="style.css">
+    <script src="lang-toggle.js" defer></script>
 </head>
 <body>
     <header>
         <h1>LegalLinkUS</h1>
         <nav>
-            <a href="index.html">Home</a> |
-            <a href="laws.html">Know Your Laws</a> |
-            <a href="search.html">Find a Lawyer</a> |
+            <a href="index.html" data-en="Home" data-es="Inicio">Home</a> |
+            <a href="laws.html" data-en="Know Your Laws" data-es="Conozca Sus Leyes">Know Your Laws</a> |
+            <a href="search.html" data-en="Find a Lawyer" data-es="Encuentra un Abogado">Find a Lawyer</a> |
             <button onclick="toggleLanguage()">ES/EN</button>
         </nav>
     </header>
     <main>
-        <h2>Know Your Laws</h2>
-        <p>This page will soon include localized legal rights and laws to help users stay informed.</p>
+        <h2 data-en="Know Your Rights in the U.S." data-es="Conozca Sus Derechos en los EE.UU.">Know Your Rights in the U.S.</h2>
+        <section>
+            <h3 data-en="1. You Have the Right to Remain Silent" data-es="1. Tiene Derecho a Permanecer en Silencio">
+                1. You Have the Right to Remain Silent
+            </h3>
+            <p data-en="You do not have to answer questions about your immigration status." 
+               data-es="No tiene que responder preguntas sobre su estado migratorio."></p>
+        </section>
+        <section>
+            <h3 data-en="2. Do Not Open the Door" data-es="2. No Abra la Puerta">
+                2. Do Not Open the Door
+            </h3>
+            <p data-en="If ICE comes to your home, you do not have to let them in without a signed warrant from a judge."
+               data-es="Si ICE llega a su casa, no tiene que dejarles entrar sin una orden firmada por un juez."></p>
+        </section>
+        <section>
+            <h3 data-en="3. Ask for a Lawyer" data-es="3. Pida un Abogado">
+                3. Ask for a Lawyer
+            </h3>
+            <p data-en="You can ask to speak to a lawyer before answering any questions."
+               data-es="Puede pedir hablar con un abogado antes de responder cualquier pregunta."></p>
+        </section>
+        <section>
+            <h3 data-en="4. Carry a Know Your Rights Card" data-es="4. Lleve una Tarjeta de Derechos">
+                4. Carry a Know Your Rights Card
+            </h3>
+            <p data-en="You can show this instead of speaking if approached by ICE or police."
+               data-es="Puede mostrar esto en lugar de hablar si ICE o la policía se le acercan."></p>
+        </section>
     </main>
-    <script>
-        function toggleLanguage() {
-            alert('Language toggle coming soon!');
-        }
-    </script>
 </body>
 </html>
