@@ -76,3 +76,19 @@ footer {
   text-align: center;
   font-size: 0.9rem;
 }
+nav a {
+  color: #ffffff; /* Makes nav links white */
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  color: #ffcc00; /* Gold hover effect for flair */
+}
+
+nav {
+  background-color: #0a1a2f; /* Dark navy background for contrast */
+  padding: 15px 0;
+  text-align: center;
+}
