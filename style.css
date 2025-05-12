@@ -1,1 +1,78 @@
-/* Full mobile-optimized design with colors, spacing, effects */
+
+/* Jaw-Dropping Mobile-Optimized Styles for LegalLinkUS */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f7fb;
+  color: #1e1e2f;
+}
+
+header {
+  background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  padding: 20px 15px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 25px 15px;
+  text-align: center;
+}
+
+main h2 {
+  font-size: 1.7rem;
+  color: #203a43;
+  margin-bottom: 10px;
+}
+
+main p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.hero-button {
+  background: #203a43;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(32, 58, 67, 0.3);
+  margin-top: 20px;
+}
+
+.hero-button:hover {
+  background: #2c5364;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background: #203a43;
+  color: white;
+  text-align: center;
+  font-size: 0.9rem;
+}
