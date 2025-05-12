@@ -1,0 +1,39 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+}
+header {
+  background: #112244;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+nav a, nav button {
+  color: white;
+  margin: 0 0.5em;
+  text-decoration: none;
+}
+main {
+  padding: 2em;
+  max-width: 600px;
+  margin: auto;
+}
+form {
+  background: white;
+  padding: 1em;
+  border-radius: 8px;
+}
+input, select, textarea {
+  display: block;
+  width: 100%;
+  margin: 0.5em 0;
+  padding: 0.5em;
+}
+button {
+  padding: 0.75em;
+  background: #112244;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
