@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Find a Lawyer - LegalLinkUS</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .container {
+      max-width: 700px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    select, input[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+    input[type="submit"] {
+      background-color: #1a1aff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #0000cc;
+    }
+  </style>
+</head>
+<body>
+  <div class="nav">
+    <h2>LegalLinkUS</h2>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="laws.html">Know Your Laws</a> |
+      <a href="search.html">Find a Lawyer</a> |
+      <button onclick="toggleLanguage()">ES/EN</button>
+    </nav>
+  </div>
+
+  <div class="container">
+    <h1>Find a Lawyer</h1>
+    <form id="lawyerSearchForm">
+      <label for="city">City</label>
+      <select id="city" name="city">
+        <option value="">Select City</option>
+        <option value="Reno">Reno</option>
+        <option value="Las Vegas">Las Vegas</option>
+        <option value="Carson City">Carson City</option>
+        <option value="Tahoe">South Lake Tahoe</option>
+      </select>
+
+      <label for="state">State</label>
+      <select id="state" name="state">
+        <option value="">Select State</option>
+        <option value="NV">Nevada</option>
+        <option value="CA">California</option>
+      </select>
+
+      <input type="submit" value="Search Now">
+    </form>
+  </div>
+
+  <script>
+    function toggleLanguage() {
+      alert("Language toggle feature coming soon!");
+    }
+
+    document.getElementById('lawyerSearchForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      alert("Search logic not yet connected. This is a placeholder.");
+    });
+  </script>
+</body>
+</html>
