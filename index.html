@@ -1,1 +1,55 @@
-<!-- Full homepage with links, mobile nav, and hero -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LegalLinkUS</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="lang-toggle.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>LegalLinkUS</h1>
+    <nav>
+      <a href="index.html" data-en="Home" data-es="Inicio">Home</a> |
+      <a href="laws.html" data-en="Know Your Laws" data-es="Conozca Sus Leyes">Know Your Laws</a> |
+      <a href="search.html" data-en="Find a Lawyer" data-es="Encuentre un Abogado">Find a Lawyer</a> |
+      <a href="signup.html" data-en="Lawyer Sign-Up" data-es="Registro de Abogado">Lawyer Sign-Up</a> |
+      <button onclick="toggleLanguage()">ES/EN</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2 data-en="Find the right legal help, fast." data-es="Encuentre ayuda legal rápidamente.">Find the right legal help, fast.</h2>
+    <p data-en="LegalLinkUS connects you with trusted lawyers in your area." data-es="LegalLinkUS lo conecta con abogados confiables en su área.">
+      LegalLinkUS connects you with trusted lawyers in your area.
+    </p>
+    <a href="search.html" class="cta" data-en="Start Searching" data-es="Comenzar búsqueda">Start Searching</a>
+  </section>
+
+  <section class="features">
+    <div>
+      <h3 data-en="Bilingual Access" data-es="Acceso Bilingüe">Bilingual Access</h3>
+      <p data-en="All features available in English and Spanish." data-es="Todas las funciones disponibles en inglés y español.">
+        All features available in English and Spanish.
+      </p>
+    </div>
+    <div>
+      <h3 data-en="Lawyer Sign-Up" data-es="Registro de Abogado">Lawyer Sign-Up</h3>
+      <p data-en="Get featured and connect with clients." data-es="Obtenga exposición y conéctese con clientes.">
+        Get featured and connect with clients.
+      </p>
+    </div>
+    <div>
+      <h3 data-en="Know Your Rights" data-es="Conozca Sus Derechos">Know Your Rights</h3>
+      <p data-en="Resources for immigrants, trappers, racers & more." data-es="Recursos para inmigrantes, trappers, corredores y más.">
+        Resources for immigrants, trappers, racers & more.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 LegalLinkUS. All rights reserved.</p>
+  </footer>
+</body>
+</html>
