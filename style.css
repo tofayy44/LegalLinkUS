@@ -1,29 +1,37 @@
-
 body {
     font-family: Arial, sans-serif;
+    background: #f4f4f4;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
-    color: #222;
 }
 header {
-    background: #111c2f;
-    color: #fff;
+    background: #001f3f;
+    color: white;
     padding: 1em;
     text-align: center;
 }
-nav a {
-    color: #66b2ff;
-    margin: 0 10px;
+header nav a {
+    margin: 0 1em;
+    color: #fff;
     text-decoration: none;
 }
-main {
-    padding: 2em;
-    background: white;
-    max-width: 800px;
-    margin: auto;
+.search-container {
+    text-align: center;
+    margin: 1em;
 }
-button {
-    margin-left: 20px;
-    padding: 0.4em;
+input, select {
+    padding: 0.5em;
+    margin: 0.5em;
+}
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1em;
+    padding: 1em;
+}
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1em;
 }
