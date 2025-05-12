@@ -2,113 +2,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>LegalLinkUS</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; background-color: #f4f4f4; }
-    header { background: #0b1c3f; color: white; padding: 20px; text-align: center; }
-    nav a { color: white; margin: 0 15px; text-decoration: none; }
-    .container { padding: 20px; max-width: 600px; margin: auto; background: white; margin-top: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-    .tab-content { display: none; }
-    .tab-content.active { display: block; }
-    input, select, textarea, button {
-      width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px;
-    }
-    button { background-color: #0b1c3f; color: white; cursor: pointer; }
-    footer { text-align: center; margin-top: 40px; padding: 10px; background: #0b1c3f; color: white; }
-  </style>
-  <script>
-    function showTab(id) {
-      document.querySelectorAll('.tab-content').forEach(t => t.style.display = 'none');
-      document.getElementById(id).style.display = 'block';
-    }
-    function toggleLang() {
-      const en = document.querySelectorAll('[data-lang="en"]');
-      const es = document.querySelectorAll('[data-lang="es"]');
-      en.forEach(e => e.style.display = e.style.display === 'none' ? '' : 'none');
-      es.forEach(e => e.style.display = e.style.display === 'none' ? '' : 'none');
-    }
-    window.onload = () => showTab('home');
-  </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LegalLinkUS</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="lang-toggle.js" defer></script>
 </head>
 <body>
-  <header>
-    <h1>LegalLinkUS</h1>
-    <p>Find the right legal help, fast.</p>
-    <nav>
-      <a href="#" onclick="showTab('home')">Home</a> |
-      <a href="#" onclick="showTab('laws')">Know Your Laws</a> |
-      <a href="#" onclick="showTab('search')">Find a Lawyer</a> |
-      <a href="#" onclick="showTab('signup')">Lawyer Sign-Up</a> |
-      <button onclick="toggleLang()">ES/EN</button>
-    </nav>
-  </header>
-
-  <div id="home" class="tab-content">
-    <div class="container">
-      <h2>Connecting you with trusted lawyers</h2>
-      <p>Click below to call or text:</p>
-      <a href="tel:+18005551234">Call Us</a> | <a href="sms:+18005551234">Text Us</a>
-    </div>
-  </div>
-
-  <div id="laws" class="tab-content">
-    <div class="container">
-      <h2 data-lang="en">Know Your Laws</h2>
-      <h2 data-lang="es" style="display:none;">Conozca Sus Leyes</h2>
-      <p data-lang="en">Legal rights by state coming soon.</p>
-      <p data-lang="es" style="display:none;">Los derechos legales por estado llegarán pronto.</p>
-      <h3 data-lang="en">For Trappers & Highway Racers</h3>
-      <h3 data-lang="es" style="display:none;">Para Traperos y Corredores</h3>
-      <ul>
-        <li data-lang="en">Never consent to a vehicle search without a warrant.</li>
-        <li data-lang="es" style="display:none;">Nunca consienta una búsqueda sin orden judicial.</li>
-        <li data-lang="en">Always ask “Am I free to go?”</li>
-        <li data-lang="es" style="display:none;">Siempre pregunte “¿Estoy libre de irme?”</li>
-        <li data-lang="en">Use your right to remain silent and call a lawyer ASAP.</li>
-        <li data-lang="es" style="display:none;">Use su derecho a guardar silencio y llame a un abogado.</li>
-      </ul>
-    </div>
-  </div>
-
-  <div id="search" class="tab-content">
-    <div class="container">
-      <h2>Find a Lawyer in Your Area</h2>
-      <input type="text" placeholder="City (e.g. Las Vegas, Reno)" />
-      <select>
-        <option>All</option>
-        <option>Criminal Defense</option>
-        <option>Immigration</option>
-        <option>DUI</option>
-        <option>Family</option>
-        <option>Business</option>
-      </select>
-      <button>Search</button>
-    </div>
-  </div>
-
-  <div id="signup" class="tab-content">
-    <div class="container">
-      <h2>Lawyer Sign-Up</h2>
-      <p>Get listed or featured on LegalLinkUS and get leads from real clients.</p>
-      <input type="text" placeholder="Full Name or Law Firm" />
-      <input type="email" placeholder="Email" />
-      <input type="tel" placeholder="Phone Number" />
-      <select>
-        <option>Criminal Defense</option>
-        <option>Immigration</option>
-        <option>DUI</option>
-        <option>Family</option>
-        <option>Business</option>
-      </select>
-      <textarea placeholder="Tell us about your services..."></textarea>
-      <button>Submit Application</button>
-    </div>
-  </div>
-
-  <footer>
-    <p>&copy; 2025 LegalLinkUS - All rights reserved.</p>
-  </footer>
+    <header>
+        <h1>LegalLinkUS</h1>
+        <nav>
+            <a href="index.html" data-en="Home" data-es="Inicio">Home</a> |
+            <a href="laws.html" data-en="Know Your Laws" data-es="Conoce Sus Leyes">Know Your Laws</a> |
+            <a href="search.html" data-en="Find a Lawyer" data-es="Encuentra un Abogado">Find a Lawyer</a> |
+            <a href="signup.html" data-en="Lawyer Sign-Up" data-es="Registro de Abogados">Lawyer Sign-Up</a> |
+            <button onclick="toggleLanguage()">ES/EN</button>
+        </nav>
+    </header>
+    <main>
+        <h2 data-en="Connecting you with trusted lawyers" data-es="Conectándote con abogados de confianza">Connecting you with trusted lawyers</h2>
+        <p data-en="Click below to call or text:" data-es="Haz clic abajo para llamar o enviar un mensaje:">Click below to call or text:</p>
+        <p><a href="tel:+18005551234" data-en="Call Us" data-es="Llámanos">Call Us</a> | <a href="sms:+18005551234" data-en="Text Us" data-es="Envíanos un mensaje">Text Us</a></p>
+    </main>
 </body>
 </html>
