@@ -1,0 +1,6 @@
+body { font-family: Arial, sans-serif; background: #f9f9f9; color: #111; padding: 0; margin: 0; }
+header { background: #0d1b2a; padding: 1em; color: #fff; text-align: center; }
+nav a, nav button { color: #fff; margin: 0 10px; text-decoration: none; }
+main { padding: 2em; text-align: center; }
+a { color: #003366; }
+button { background: #003366; color: #fff; border: none; padding: 5px 10px; cursor: pointer; }
