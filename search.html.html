@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Find a Lawyer - LegalLinkUS</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        const lawyers = [
+            { name: "Ramos Law Firm", city: "Las Vegas", state: "NV", phone: "(702) 555-1234" },
+            { name: "Sanchez Legal", city: "Reno", state: "NV", phone: "(775) 555-9876" },
+            { name: "Martinez & Co.", city: "Carson City", state: "NV", phone: "(775) 555-4321" },
+            { name: "Hernandez Law Group", city: "Las Vegas", state: "NV", phone: "(702) 555-7890" }
+        ];
+
+        function searchLawyers() {
+            const input = document.getElementById("searchInput").value.toLowerCase();
+            const results = document.getElementById("results");
+            results.innerHTML = "";
+
+            const filtered = lawyers.filter(lawyer =>
+                lawyer.city.toLowerCase().includes(input) || 
+                lawyer.state.toLowerCase().includes(input)
+            );
+
+            if (filtered.length === 0) {
+                results.innerHTML = "<p>No lawyers found in that area.</p>";
+                return;
+            }
+
+            filtered.forEach(lawyer => {
+                const div = document.createElement("div");
+                div.innerHTML = `<strong>${lawyer.name}</strong><br>${lawyer.city}, ${lawyer.state}<br><a href="tel:${lawyer.phone}">${lawyer.phone}</a><hr>`;
+                results.appendChild(div);
+            });
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>LegalLinkUS</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="laws.html">Know Your Laws</a> |
+            <a href="search.html">Find a Lawyer</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Search for a Lawyer</h2>
+        <input type="text" id="searchInput" placeholder="Enter city or state (e.g. Las Vegas)" style="padding: 10px; width: 80%; max-width: 400px;" />
+        <br><br>
+        <button onclick="searchLawyers()">Search</button>
+        <div id="results" style="margin-top: 20px;"></div>
+    </main>
+</body>
+</html>
