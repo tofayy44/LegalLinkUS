@@ -1,1 +1,0 @@
-// FINAL Stripe checkout button logic
