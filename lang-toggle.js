@@ -1,4 +1,3 @@
-
 function toggleLanguage() {
-  alert('Language toggle clicked (functionality pending).');
+  alert("Language toggle coming soon!");
 }
