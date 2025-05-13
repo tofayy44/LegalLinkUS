@@ -1,94 +1,63 @@
-
-/* Jaw-Dropping Mobile-Optimized Styles for LegalLinkUS */
-
 body {
   margin: 0;
-  padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f4f7fb;
-  color: #1e1e2f;
+  background: #f5f7fa;
+  color: #1a1a1a;
 }
-
 header {
-  background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+  background: #101828;
   color: white;
-  padding: 20px 15px;
+  padding: 1rem;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
-
-header h1 {
-  margin: 0;
-  font-size: 2rem;
-  letter-spacing: 1px;
+nav {
+  margin: 1rem 0;
 }
-
 nav a {
-  margin: 0 10px;
   color: white;
+  margin: 0 1rem;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: bold;
 }
-
 nav a:hover {
   text-decoration: underline;
 }
-
-main {
-  padding: 25px 15px;
+.hero {
   text-align: center;
-}
-
-main h2 {
-  font-size: 1.7rem;
-  color: #203a43;
-  margin-bottom: 10px;
-}
-
-main p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #333;
-}
-
-.hero-button {
-  background: #203a43;
+  padding: 3rem 1rem;
+  background: #1d2939;
   color: white;
-  padding: 12px 25px;
+}
+.hero h2 {
+  font-size: 2rem;
+}
+.hero p {
+  margin: 1rem 0;
+}
+.cta, button {
+  background-color: #0066cc;
+  color: white;
+  padding: 0.75rem 1.5rem;
   border: none;
-  border-radius: 8px;
   font-size: 1rem;
-  font-weight: bold;
   cursor: pointer;
-  box-shadow: 0 5px 15px rgba(32, 58, 67, 0.3);
-  margin-top: 20px;
-}
-
-.hero-button:hover {
-  background: #2c5364;
-}
-
-footer {
-  margin-top: 40px;
-  padding: 20px;
-  background: #203a43;
-  color: white;
-  text-align: center;
-  font-size: 0.9rem;
-}
-nav a {
-  color: #ffffff; /* Makes nav links white */
+  border-radius: 5px;
   text-decoration: none;
-  font-weight: 600;
-  margin: 0 10px;
 }
-
-nav a:hover {
-  color: #ffcc00; /* Gold hover effect for flair */
-}
-
-nav {
-  background-color: #0a1a2f; /* Dark navy background for contrast */
-  padding: 15px 0;
+footer {
   text-align: center;
+  background: #101828;
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+input, select, textarea {
+  display: block;
+  width: 90%;
+  max-width: 400px;
+  margin: 0.5rem auto;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
