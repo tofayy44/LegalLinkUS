@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Featured Lawyers</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="lang-toggle.js" defer></script>
 </head>
 <body>
   <header>
@@ -15,13 +16,18 @@
       <a href="search.html">Find a Lawyer</a>
       <a href="signup.html">Lawyer Sign-Up</a>
       <a href="featured.html">Featured</a>
+      <button id="langToggleBtn">ES / EN</button>
     </nav>
   </header>
   <main>
-    <div class="featured-card">
-      <h3>Attorney Jane Doe</h3>
-      <p>Criminal Defense | Los Angeles, CA</p>
-    </div>
+    <section id="featured-en">
+      <h2>Top-Rated Featured Lawyers</h2>
+      <p>Explore the most trusted legal pros on LegalLinkUS.</p>
+    </section>
+    <section id="featured-es" style="display:none;">
+      <h2>Abogados Destacados Mejor Calificados</h2>
+      <p>Descubra los profesionales legales más confiables en LegalLinkUS.</p>
+    </section>
   </main>
 </body>
 </html>

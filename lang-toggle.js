@@ -1,16 +1,10 @@
-
 document.addEventListener("DOMContentLoaded", function () {
-  const enSection = document.getElementById("rights-en");
-  const esSection = document.getElementById("rights-es");
+  const enSections = document.querySelectorAll('[id$="-en"]');
+  const esSections = document.querySelectorAll('[id$="-es"]');
   const toggleBtn = document.getElementById("langToggleBtn");
 
   toggleBtn.addEventListener("click", () => {
-    if (enSection.style.display === "none") {
-      enSection.style.display = "block";
-      esSection.style.display = "none";
-    } else {
-      enSection.style.display = "none";
-      esSection.style.display = "block";
-    }
+    enSections.forEach(s => s.style.display = s.style.display === "none" ? "block" : "none");
+    esSections.forEach(s => s.style.display = s.style.display === "none" ? "block" : "none");
   });
 });

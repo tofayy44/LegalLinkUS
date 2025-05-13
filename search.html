@@ -3,29 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Find a Lawyer</title>
+  <title>Search Lawyers</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="lang-toggle.js" defer></script>
 </head>
 <body>
   <header>
-    <h1>Find a Lawyer</h1>
+    <h1>Search for Lawyers</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="laws.html">Know Your Laws</a>
       <a href="search.html">Find a Lawyer</a>
       <a href="signup.html">Lawyer Sign-Up</a>
       <a href="featured.html">Featured</a>
+      <button id="langToggleBtn">ES / EN</button>
     </nav>
   </header>
   <main>
-    <form>
-      <input type="text" placeholder="Enter your city" />
-      <select>
-        <option value="criminal">Criminal Defense</option>
-        <option value="immigration">Immigration</option>
-      </select>
-      <button type="submit">Search</button>
-    </form>
+    <section id="search-en">
+      <form>
+        <input type="text" placeholder="Enter your city" />
+        <select>
+          <option value="criminal">Criminal Defense</option>
+          <option value="immigration">Immigration</option>
+        </select>
+        <button type="submit">Search</button>
+      </form>
+    </section>
+    <section id="search-es" style="display:none;">
+      <form>
+        <input type="text" placeholder="Ingrese su ciudad" />
+        <select>
+          <option value="criminal">Defensa Criminal</option>
+          <option value="immigration">Inmigración</option>
+        </select>
+        <button type="submit">Buscar</button>
+      </form>
+    </section>
   </main>
 </body>
 </html>
