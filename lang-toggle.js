@@ -1,4 +1,4 @@
+
 function toggleLanguage() {
-  // Placeholder function for language toggle
-  alert("Language toggle clicked!");
+  alert('Language toggle clicked (functionality pending).');
 }
