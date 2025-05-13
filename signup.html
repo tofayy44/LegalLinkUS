@@ -1,10 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>Lawyer Sign-Up - LegalLinkUS</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
@@ -16,23 +16,33 @@
       <a href="signup.html">Lawyer Sign-Up</a>
     </nav>
   </header>
-  <section class="hero">
+
+  <main class="form-section">
     <h2>Lawyer Sign-Up</h2>
-    <form>
-      <input type="text" placeholder="Full Name or Firm" />
-      <input type="email" placeholder="Email" />
-      <input type="tel" placeholder="Phone Number" />
-      <select>
-        <option>Practice Area</option>
+    <p>Get featured for 3 months for $49. Gain clients and visibility.</p>
+    <form enctype="multipart/form-data">
+      <input type="text" placeholder="Full Name or Firm" required><br>
+      <input type="email" placeholder="Email" required><br>
+      <input type="tel" placeholder="Phone Number" required><br>
+      <select required>
+        <option value="">Select Practice Area</option>
         <option>Criminal Defense</option>
         <option>Immigration</option>
-        <option>Traffic</option>
-        <option>Business</option>
-      </select>
-      <textarea placeholder="Tell us about your services..."></textarea>
-      <button type="submit">Submit Application</button>
+        <option>Traffic Tickets</option>
+        <option>Business Law</option>
+      </select><br>
+      <label>Upload Profile Image:</label><br>
+      <input type="file" accept="image/*"><br>
+      <button type="button" onclick="redirectToStripe()">Pay $49 & Feature Me</button>
     </form>
-  </section>
+  </main>
+
+  <script>
+    function redirectToStripe() {
+      window.location.href = "https://buy.stripe.com/test_4gw8A98jH4d6azGaEE"; // Placeholder Stripe link
+    }
+  </script>
+
   <footer>
     <p>&copy; 2025 LegalLinkUS. All rights reserved.</p>
   </footer>

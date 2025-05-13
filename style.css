@@ -1,7 +1,8 @@
+
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f5f7fa;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9f9;
   color: #1a1a1a;
 }
 header {
@@ -9,9 +10,6 @@ header {
   color: white;
   padding: 1rem;
   text-align: center;
-}
-nav {
-  margin: 1rem 0;
 }
 nav a {
   color: white;
@@ -22,42 +20,33 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
-.hero {
+main {
   text-align: center;
-  padding: 3rem 1rem;
-  background: #1d2939;
-  color: white;
-}
-.hero h2 {
-  font-size: 2rem;
-}
-.hero p {
-  margin: 1rem 0;
-}
-.cta, button {
-  background-color: #0066cc;
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  font-size: 1rem;
-  cursor: pointer;
-  border-radius: 5px;
-  text-decoration: none;
-}
-footer {
-  text-align: center;
-  background: #101828;
-  color: white;
-  padding: 1rem;
-  margin-top: 2rem;
+  padding: 2rem;
 }
 input, select, textarea {
   display: block;
-  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+  width: 80%;
   max-width: 400px;
-  margin: 0.5rem auto;
-  padding: 0.75rem;
+}
+button {
+  background: #4f46e5;
+  color: white;
+  padding: 0.75rem 1.5rem;
   font-size: 1rem;
-  border: 1px solid #ccc;
+  border: none;
   border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background: #3730a3;
+}
+footer {
+  background: #101828;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
 }
