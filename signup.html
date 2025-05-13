@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Lawyer Sign-Up</title>
   <link rel="stylesheet" href="style.css" />
   <script src="lang-toggle.js" defer></script>
@@ -20,25 +20,12 @@
     </nav>
   </header>
   <main>
-    <section id="signup-en">
-      <form method="POST" action="email-handler.php" onsubmit="setTimeout(() => window.location.href='https://buy.stripe.com/cN229p7Vw1crajucMM', 500);">
-        <input type="text" name="name" placeholder="Full Name or Firm" required />
-        <input type="email" name="email" placeholder="Email" required />
-        <input type="tel" name="phone" placeholder="Phone Number" required />
-        <textarea name="message" placeholder="Tell us about your services"></textarea>
-        <button type="submit">Submit & Pay</button>
-      </form>
-    </section>
-
-    <section id="signup-es" style="display:none;">
-      <form method="POST" action="email-handler.php" onsubmit="setTimeout(() => window.location.href='https://buy.stripe.com/cN229p7Vw1crajucMM', 500);">
-        <input type="text" name="name" placeholder="Nombre Completo o Firma" required />
-        <input type="email" name="email" placeholder="Correo Electrónico" required />
-        <input type="tel" name="phone" placeholder="Número de Teléfono" required />
-        <textarea name="message" placeholder="Cuéntenos sobre sus servicios"></textarea>
-        <button type="submit">Enviar y Pagar</button>
-      </form>
-    </section>
+    <form method="POST" action="submit-lawyer.php">
+      <input type="text" name="name" placeholder="Full Name or Firm" required />
+      <input type="text" name="specialty" placeholder="Specialty (e.g., Criminal Defense)" required />
+      <input type="text" name="location" placeholder="City, State" required />
+      <button type="submit">Submit & Pay</button>
+    </form>
   </main>
 </body>
 </html>
