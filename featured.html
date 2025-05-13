@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Featured Lawyers - LegalLinkUS</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .featured-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .lawyer-card {
+      background: white;
+      border: 2px solid #4f46e5;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      width: 280px;
+      margin: 1rem;
+      text-align: center;
+      padding: 1rem;
+    }
+    .lawyer-card img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+    .lawyer-card h3 {
+      margin: 0.5rem 0 0;
+    }
+    .badge {
+      background: gold;
+      color: black;
+      padding: 4px 8px;
+      font-weight: bold;
+      border-radius: 5px;
+      display: inline-block;
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>LegalLinkUS</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="laws.html">Know Your Laws</a>
+      <a href="search.html">Find a Lawyer</a>
+      <a href="signup.html">Lawyer Sign-Up</a>
+      <a href="featured.html">Featured Lawyers</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2 style="text-align:center;">Featured Lawyers</h2>
+    <div class="featured-container">
+      <div class="lawyer-card">
+        <span class="badge">FEATURED</span>
+        <img src="https://via.placeholder.com/280x200.png?text=Lawyer+Photo" alt="Lawyer Photo">
+        <h3>Jane Doe, Esq.</h3>
+        <p>Criminal Defense - Los Angeles, CA</p>
+      </div>
+
+      <div class="lawyer-card">
+        <span class="badge">FEATURED</span>
+        <img src="https://via.placeholder.com/280x200.png?text=Lawyer+Photo" alt="Lawyer Photo">
+        <h3>Ricardo Morales Law</h3>
+        <p>Immigration Law - Reno, NV</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p style="text-align:center;">&copy; 2025 LegalLinkUS. All rights reserved.</p>
+  </footer>
+</body>
+</html>
