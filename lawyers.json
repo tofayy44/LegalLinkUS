@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Jane Doe, Esq.",
+    "specialty": "Criminal Defense",
+    "location": "Los Angeles, CA",
+    "verified": true
+  },
+  {
+    "name": "Carlos Hernández",
+    "specialty": "Immigration Law",
+    "location": "Las Vegas, NV",
+    "verified": false
+  }
+]
