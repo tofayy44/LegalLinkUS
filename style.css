@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: #f9f9f9;
+  background: #f5f7fa;
   color: #1a1a1a;
 }
 header {
@@ -17,36 +17,9 @@ nav a {
   text-decoration: none;
   font-weight: bold;
 }
-nav a:hover {
-  text-decoration: underline;
-}
-main {
+.hero {
   text-align: center;
-  padding: 2rem;
-}
-input, select, textarea {
-  display: block;
-  margin: 10px auto;
-  padding: 10px;
-  width: 80%;
-  max-width: 400px;
-}
-button {
-  background: #4f46e5;
+  padding: 3rem 1rem;
+  background: #1d2939;
   color: white;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-button:hover {
-  background: #3730a3;
-}
-footer {
-  background: #101828;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
 }
