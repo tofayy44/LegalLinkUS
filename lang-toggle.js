@@ -1,1 +1,4 @@
-// Language toggle logic for EN/ES with dynamic switching
+function toggleLanguage() {
+  // Placeholder function for language toggle
+  alert("Language toggle clicked!");
+}
