@@ -21,30 +21,24 @@
   </header>
   <main>
     <section id="signup-en">
-      <form onsubmit="redirectToStripe(); return false;">
-        <input type="text" placeholder="Full Name or Firm" required />
-        <input type="email" placeholder="Email" required />
-        <input type="tel" placeholder="Phone Number" required />
-        <textarea placeholder="Tell us about your services"></textarea>
+      <form method="POST" action="email-handler.php" onsubmit="setTimeout(() => window.location.href='https://buy.stripe.com/cN229p7Vw1crajucMM', 500);">
+        <input type="text" name="name" placeholder="Full Name or Firm" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="tel" name="phone" placeholder="Phone Number" required />
+        <textarea name="message" placeholder="Tell us about your services"></textarea>
         <button type="submit">Submit & Pay</button>
       </form>
     </section>
 
     <section id="signup-es" style="display:none;">
-      <form onsubmit="redirectToStripe(); return false;">
-        <input type="text" placeholder="Nombre Completo o Firma" required />
-        <input type="email" placeholder="Correo Electrónico" required />
-        <input type="tel" placeholder="Número de Teléfono" required />
-        <textarea placeholder="Cuéntenos sobre sus servicios"></textarea>
+      <form method="POST" action="email-handler.php" onsubmit="setTimeout(() => window.location.href='https://buy.stripe.com/cN229p7Vw1crajucMM', 500);">
+        <input type="text" name="name" placeholder="Nombre Completo o Firma" required />
+        <input type="email" name="email" placeholder="Correo Electrónico" required />
+        <input type="tel" name="phone" placeholder="Número de Teléfono" required />
+        <textarea name="message" placeholder="Cuéntenos sobre sus servicios"></textarea>
         <button type="submit">Enviar y Pagar</button>
       </form>
     </section>
   </main>
-
-  <script>
-    function redirectToStripe() {
-      window.location.href = "https://buy.stripe.com/cN229p7Vw1crajucMM";
-    }
-  </script>
 </body>
 </html>
